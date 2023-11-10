@@ -3,7 +3,7 @@ let movies = document.querySelector(".movies")
 fetch("https://api.tvmaze.com/shows")
     .then(res => res.json())
     .then(datas => {
-        for (let i = 0; i < 28; i++) {
+        for (let i = 0; i < 52; i++) {
             movies.innerHTML += `
                 <div class="col-3 p-4">
                     <div class="card" style="width: 18rem;">

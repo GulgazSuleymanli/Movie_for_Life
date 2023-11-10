@@ -8,9 +8,9 @@ fetch("https://api.tvmaze.com/shows/"+id)
         details.innerHTML += `
         <div class="col-3">
             <div class="card" style="width: 18rem;">
-                <img src="${data.image.medium}" class="card-img-top" alt="...">
+                <a href="${data.officialSite}"><img src="${data.image.medium}" class="card-img-top" alt="..."></a>
                 <div class="card-body">
-                    <a href="${data.officialSite}"><h5 class="card-title">${data.name}</h5></a>
+                    <a href="${data.officialSite}" class="text-decoration-none text-dark"><h5 class="card-title">${data.name}</h5></a>
                 </div>
             </div>
         </div>
@@ -19,12 +19,11 @@ fetch("https://api.tvmaze.com/shows/"+id)
         details.innerHTML += `
             <div class="col-9">
                 <h5>Overview:</h5>
-                <p>${data.sumary}</p>
-                <strong>Genres:</strong>` + 
-                data.genres.forEach(element => {
-                    `<p d-flex>${element},</p>`
-                }) +
-                `<table class="table">
+                <p>${data.summary}</p>
+                <br>
+                <strong>Genres:</strong><p>${data.genres}</p>
+                <br>
+                <table class="table">
                     <tr>
                         <th>Average Runtime</th>
                         <th>Language</th>
