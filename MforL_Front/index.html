@@ -11,31 +11,32 @@
 </head>
 
 <body>
-    <header>
-        <div class="container header pb-5">
+    <header class="header">
+        <div class="container pb-5">
             <div class="row">
-                <div class="col-3 pt-4">
-                    <h1>Movie for Life</h1>
+                <div class="col-3 pt-5">
+                    <h1 class="title">Movie for Life</h1>
                 </div>
                 <div class="col-6 pt-5 fw-bold">
-                    <ul class="d-flex justify-content-evenly list-unstyled">
-                        <li><a href="" class="text-decoration-none text-dark">Menu</a></li>
-                        <li><a href="" class="text-decoration-none text-dark">Weekly Trends</a></li>
-                        <li><a href="" class="text-decoration-none text-dark">Recently Added</a></li>
+                    <ul id="chooseList" class="d-flex justify-content-evenly list-unstyled">
+                        <li><a href="" class="text-decoration-none text-light"><h5>Menu</h5></a></li>
+                        <li><a href="" class="text-decoration-none text-light"><h5>Weekly Trends</h5></a></li>
+                        <li><a href="" class="text-decoration-none text-light"><h5>Recently Added</h5></a></li>
                     </ul>
                 </div>
-                <div class="col-3 pt-4 d-flex justify-content-center fw-bold">
-                    <ul class="list-unstyled">
-                        <li><a href="" class="text-decoration-none text-dark">Sign Up</a></li>
-                        <li><a href="" class="text-decoration-none text-dark">Log in</a></li>
+                <div class="col-3 pt-4 fw-bold">
+                    <ul id="registerList" class="d-flex justify-content-evenly list-unstyled">
+                        <li><a href="" class="text-decoration-none text-light"><h5>Sign Up</h5></a></li>
+                        <li><a href="" class="text-decoration-none text-light"><h5>Log in</h5></a></li>
                     </ul>
+                    <input type="text" placeholder="/Search movie..." class="d-flex justify-content-center">
                 </div>
             </div>
         </div>
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <section>
             <div class="container">
                 <div class="row movies">
@@ -45,11 +46,11 @@
         </section>
     </main>
 
-    <footer>
-        <div class="container footer">
+    <footer class="footer">
+        <div class="container">
             <div class="row">
                 <div class="col-4 pt-4">
-                    <h1>Movie for Life</h1>
+                    <h1 class="title">Movie for Life</h1>
                 </div>
                 <div class="col-8 pt-4">
                     <ul class="d-flex justify-content-evenly list-unstyled">
@@ -73,48 +74,48 @@
                 </div>
                 <div class="row pt-3">
                     <div class="col-4 pt-2">
-                        <h5>Popular Genres</h5>
+                        <h5 class="headline">Popular Genres</h5>
                         <div class="row d-flex">
                             <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li><a href="" class="text-decoration-none text-dark">Action</a></li>
-                                    <li><a href="" class="text-decoration-none text-dark">Science Fiction</a></li>
-                                    <li><a href="" class="text-decoration-none text-dark">Fantastic</a></li>
-                                    <li><a href="" class="text-decoration-none text-dark">Horror</a></li>
+                                <ul class="list-unstyled lists">
+                                    <li><a href="" class="text-decoration-none text-light"><p>Action</p></a></li>
+                                    <li><a href="" class="text-decoration-none text-light"><p>Science Fiction</p></a></li>
+                                    <li><a href="" class="text-decoration-none text-light"><p>Fantastic</p></a></li>
+                                    <li><a href="" class="text-decoration-none text-light"><p>Horror</p></a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
-                                <ul class="list-unstyled">
-                                    <li><a href="" class="text-decoration-none text-dark">Animation</a></li>
-                                    <li><a href="" class="text-decoration-none text-dark">Mini</a></li>
-                                    <li><a href="" class="text-decoration-none text-dark">Comedy</a></li>
-                                    <li><a href="" class="text-decoration-none text-dark">Love</a></li>
+                                <ul class="list-unstyled lists">
+                                    <li><a href="" class="text-decoration-none text-light"><p>Animation</p></a></li>
+                                    <li><a href="" class="text-decoration-none text-light"><p>Mini</p></a></li>
+                                    <li><a href="" class="text-decoration-none text-light"><p>Comedy</p></a></li>
+                                    <li><a href="" class="text-decoration-none text-light"><p>Love</p></a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-4 pt-2">
-                        <h5>Featured TV Series and Movies</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="" class="text-decoration-none text-dark">Narcos:Mexico</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Venom</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">The Vitcher</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Peaky Blinders</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Titans</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">La Casa de Papel</a></li>
+                        <h5 class="headline">Featured TV Series and Movies</h5>
+                        <ul class="list-unstyled lists">
+                            <li><a href="" class="text-decoration-none text-light"><p>Narcos:Mexico</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Venom</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>The Vitcher</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Peaky Blinders</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Titans</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>La Casa de Papel</p></a></li>
                         </ul>
 
                     </div>
                     <div class="col-4 pt-2">
-                        <h5>Popular TV series and movies</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="" class="text-decoration-none text-dark">Lucifer</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Dark</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Riverdale</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">The Punisher</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Vikings:Valhala</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Friends</a></li>
-                            <li><a href="" class="text-decoration-none text-dark">Marvel's Daredevil</a></li>
+                        <h5 class="headline">Popular TV series and movies</h5>
+                        <ul class="list-unstyled lists">
+                            <li><a href="" class="text-decoration-none text-light"><p>Lucifer</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Dark</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Riverdale</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>The Punisher</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Vikings:Valhala</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Friends</p></a></li>
+                            <li><a href="" class="text-decoration-none text-light"><p>Marvel's Daredevil</p></a></li>
                         </ul>
                     </div>
                 </div>

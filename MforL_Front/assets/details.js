@@ -18,12 +18,12 @@ fetch("https://api.tvmaze.com/shows/"+id)
 
         details.innerHTML += `
             <div class="col-9">
-                <h5>Overview:</h5>
+                <h5 id="overview">Overview:</h5>
                 <p>${data.summary}</p>
                 <br>
-                <strong>Genres:</strong><p>${data.genres}</p>
+                <strong id="genres">Genres:</strong><p>${data.genres}</p>
                 <br>
-                <table class="table">
+                <table class="table table-dark">
                     <tr>
                         <th>Average Runtime</th>
                         <th>Language</th>
